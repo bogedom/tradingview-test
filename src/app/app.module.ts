@@ -3,19 +3,20 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { ChartViewComponent } from './chart-view/chart-view.component';
-import { MyDatafeedService } from './shared/my-datafeed.service';
+import { SocketService } from './shared/socket.service';
+import { ChatService } from './shared/chat.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ChartViewComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [MyDatafeedService],
+  providers: [SocketService, ChatService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

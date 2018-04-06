@@ -217,4 +217,4 @@ export interface IDatafeedChartApi {
 	unsubscribeDepth?(subscriberUID: string): void;
 }
 
-export as namespace TradingView;
+export as namespace TradingViewApi;

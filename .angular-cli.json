@@ -23,6 +23,7 @@
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
+        "../src/assets/charting_library/charting_library.min.js",
         "../node_modules/postscribe/dist/postscribe.min.js"
       ],
       "environmentSource": "environments/environment.ts",
